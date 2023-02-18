@@ -12,8 +12,7 @@
   $ pip install -r requirements.txt
 
   # Uruchomienie aplikacji
-  $ set FLASK_APP=Simpleflaskapp
-  $ flask run
+  $ flask --app Simpleflaskapp run
   
   # Sprawdzenie czy działa
   # Wchodzimy w przeglądarkę i wpisujemy
