@@ -12,8 +12,7 @@
   $ pip install -r requirements.txt
 
   # App run:
-  $ set FLASK_APP=Simpleflaskapp
-  $ flask run
+  $ flask --app simpleflaskapp run
   
   # Check if it's working:
   # Put that in your net browser:
