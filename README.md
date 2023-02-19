@@ -1,21 +1,22 @@
 # Simple Flask App
 
 
-- Instalacja Flak w hermetycznym środowisku i uruchomienie aplikacji:
+- Instalation of Flask and running a simple app:
 
   ```
-  # tworzymy hermetyczne środowisko:
+  # First we need to make virtual environment
   $ py -3 -m venv venv
 
-  # aktywowanie hermetycznego środowiska
+  # Second we need to activate it
   $ venv\Scripts\activate
   $ pip install -r requirements.txt
 
-  # Uruchomienie aplikacji
-  $ flask --app Simpleflaskapp run
+  # App run:
+  $ set FLASK_APP=Simpleflaskapp
+  $ flask run
   
-  # Sprawdzenie czy działa
-  # Wchodzimy w przeglądarkę i wpisujemy
+  # Check if it's working:
+  # Put that in your net browser:
   $ http://127.0.0.1:5000/
   ```
 
