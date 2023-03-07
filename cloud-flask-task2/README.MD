@@ -8,9 +8,12 @@
   $ python3 -m venv venv
 
   # Second we need to activate it
-  $ . /venv/bin/activate
+  $ . venv/bin/activate
   $ pip install -r requirements.txt
 
+  # PyLint run:
+  $ pylint flasktask2
+  
   # App run:
   $ flask --app flasktask2 run
   
