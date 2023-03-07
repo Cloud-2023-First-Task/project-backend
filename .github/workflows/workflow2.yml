@@ -26,3 +26,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+        
+      - name: Install dependencies
+        run: |
+          cd cloud-flask-task2
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pylint $(git ls-files '*.py')
+
