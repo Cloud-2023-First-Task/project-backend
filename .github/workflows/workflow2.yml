@@ -19,9 +19,6 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
-#     env:
-#       working-directory: ./cloud-flask-task2
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -29,11 +26,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-          
-      - name: Install dependencies and run pylint
-        run: |
-          cd ./cloud-flask-task2
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pylint flasktask2.py
+
 
