@@ -1,4 +1,4 @@
-name: Pylint
+name: Pylinter job
 
 on: [push]
 
@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/setup-python@v3
+    - uses: actions/checkout@v3
     
     - name: Analysing the code with pylint
       run: |
