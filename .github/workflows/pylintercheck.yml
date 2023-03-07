@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Install dependencies and run pylint
       run: |
-        pwd
+        cd cloud-flask-task2
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pylint flasktask2.py
